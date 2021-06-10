@@ -1,5 +1,6 @@
 ---
-- become: True
+- hosts: webservers 
+  become: True
   tasks:
     - name: Install packages
       yum:
